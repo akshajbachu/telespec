@@ -1,0 +1,275 @@
+{
+  "generated_at": "2026-08-22T03:26:09.035866+00:00",
+  "mode": "full",
+  "frequency_recovery": [
+    {
+      "missing": 0.0,
+      "gls_median_relative_error": 0.00503144654088062,
+      "interpolate_fft_median_relative_error": 0.0041841004184100476
+    },
+    {
+      "missing": 0.2,
+      "gls_median_relative_error": 0.00503144654088062,
+      "interpolate_fft_median_relative_error": 0.0041841004184100476
+    },
+    {
+      "missing": 0.4,
+      "gls_median_relative_error": 0.005345911949685561,
+      "interpolate_fft_median_relative_error": 0.008403361344537747
+    },
+    {
+      "missing": 0.6,
+      "gls_median_relative_error": 0.005660377358490502,
+      "interpolate_fft_median_relative_error": 0.012658227848101286
+    }
+  ],
+  "fap_calibration": [
+    {
+      "nominal_false_alarm_probability": 0.01,
+      "empirical_false_alarm_rate": 0.0,
+      "trials": 20.0
+    },
+    {
+      "nominal_false_alarm_probability": 0.05,
+      "empirical_false_alarm_rate": 0.05,
+      "trials": 20.0
+    },
+    {
+      "nominal_false_alarm_probability": 0.1,
+      "empirical_false_alarm_rate": 0.05,
+      "trials": 20.0
+    }
+  ],
+  "synthetic_detection": {
+    "level_shift": {
+      "telespec": {
+        "precision": 0.48717948717948717,
+        "recall": 0.95,
+        "f1": 0.6440677966101694
+      },
+      "sigma": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "ewma": {
+        "precision": 0.5128205128205128,
+        "recall": 1.0,
+        "f1": 0.6779661016949152
+      },
+      "rolling_robust_z": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      }
+    },
+    "variance_burst": {
+      "telespec": {
+        "precision": 0.5128205128205128,
+        "recall": 1.0,
+        "f1": 0.6779661016949152
+      },
+      "sigma": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "ewma": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "rolling_robust_z": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      }
+    },
+    "spikes": {
+      "telespec": {
+        "precision": 0.5128205128205128,
+        "recall": 1.0,
+        "f1": 0.6779661016949152
+      },
+      "sigma": {
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1": 0.8333333333333333
+      },
+      "ewma": {
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1": 0.8333333333333333
+      },
+      "rolling_robust_z": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      }
+    },
+    "periodicity": {
+      "telespec": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      },
+      "sigma": {
+        "precision": 1.0,
+        "recall": 0.85,
+        "f1": 0.9189189189189189
+      },
+      "ewma": {
+        "precision": 1.0,
+        "recall": 0.85,
+        "f1": 0.9189189189189189
+      },
+      "rolling_robust_z": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      }
+    }
+  },
+  "nab": [
+    {
+      "series": "benchmarks/data/nab/realAWSCloudwatch/ec2_network_in_257a54.csv",
+      "labeled_windows": 1,
+      "downsample_stride": 6,
+      "telespec": {
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "f1": 0.2857142857142857
+      },
+      "baselines": {
+        "sigma": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ewma": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "rolling_robust_z": {
+          "precision": 0.016129032258064516,
+          "recall": 1.0,
+          "f1": 0.031746031746031744
+        }
+      },
+      "sha256": "39104b08f2e0a673b5137eb7681897fcadf0955fedf565740a6a94edc63a81a4"
+    },
+    {
+      "series": "benchmarks/data/nab/realAWSCloudwatch/ec2_network_in_5abac7.csv",
+      "labeled_windows": 2,
+      "downsample_stride": 7,
+      "telespec": {
+        "precision": 0.1,
+        "recall": 1.0,
+        "f1": 0.18181818181818182
+      },
+      "baselines": {
+        "sigma": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337
+        },
+        "ewma": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337
+        },
+        "rolling_robust_z": {
+          "precision": 0.0425531914893617,
+          "recall": 1.0,
+          "f1": 0.08163265306122448
+        }
+      },
+      "sha256": "c27ef93f582af63bf42e80d804764cbe64ae987620f3cfab5477d6ebb3c6157e"
+    },
+    {
+      "series": "benchmarks/data/nab/realAWSCloudwatch/elb_request_count_8c0756.csv",
+      "labeled_windows": 2,
+      "downsample_stride": 6,
+      "telespec": {
+        "precision": 0.06666666666666667,
+        "recall": 0.5,
+        "f1": 0.11764705882352941
+      },
+      "baselines": {
+        "sigma": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "ewma": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "rolling_robust_z": {
+          "precision": 0.030303030303030304,
+          "recall": 0.5,
+          "f1": 0.05714285714285715
+        }
+      },
+      "sha256": "74c26574a01ca9fb89dddb5021e2e13c3a93eb25dc640438a9acb1ceb00f1021"
+    },
+    {
+      "series": "benchmarks/data/nab/realKnownCause/ec2_request_latency_system_failure.csv",
+      "labeled_windows": 3,
+      "downsample_stride": 6,
+      "telespec": {
+        "precision": 0.1111111111111111,
+        "recall": 0.3333333333333333,
+        "f1": 0.16666666666666666
+      },
+      "baselines": {
+        "sigma": {
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "f1": 0.5
+        },
+        "ewma": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571
+        },
+        "rolling_robust_z": {
+          "precision": 0.11764705882352941,
+          "recall": 0.6666666666666666,
+          "f1": 0.2
+        }
+      },
+      "sha256": "98378580aa80157e057c61d59d81daddccc6c65a2c0c800e3f01f603b8215c3f"
+    },
+    {
+      "series": "benchmarks/data/nab/realTraffic/speed_6005.csv",
+      "labeled_windows": 1,
+      "downsample_stride": 4,
+      "telespec": {
+        "precision": 0.1,
+        "recall": 1.0,
+        "f1": 0.18181818181818182
+      },
+      "baselines": {
+        "sigma": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "ewma": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "rolling_robust_z": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "sha256": "7976e7596cd1e579696c737576e96a26fe041484472ed7d0a463ce2b094d7aa7"
+    }
+  ]
+}
