@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://akshajbachu.github.io/telespec
+    about: Methodology, validation protocol, and API reference.
+  - name: Report a security vulnerability
+    url: https://github.com/akshajbachu/telespec/security/advisories/new
+    about: Please report vulnerabilities privately rather than in a public issue.

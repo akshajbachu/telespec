@@ -1,0 +1,29 @@
+site_name: telespec
+site_url: https://akshajbachu.github.io/telespec/
+site_description: Explainable spectral analysis for irregular network telemetry
+site_author: Akshaj Bachu
+copyright: Copyright &copy; 2026 Akshaj Bachu
+repo_name: akshajbachu/telespec
+repo_url: https://github.com/akshajbachu/telespec
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - Methodology: methodology.md
+  - Validation: validation.md
+  - API: api.md
+  - Release: release.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
